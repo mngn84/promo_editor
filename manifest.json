@@ -11,17 +11,18 @@
         "scripting",
         "tabs"
     ],
+
     "content_scripts": [
         {
             "matches": [
                 "<all_urls>"
             ],
             "js": [
-                "content-scripts/promo1.js"
+                "content-scripts/search.js"
             ]
         }
     ],
     "background": {
-    "service_worker": "service-worker.js"
-  }
+        "service_worker": "service-worker.js"
+    }
 }

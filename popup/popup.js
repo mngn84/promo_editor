@@ -1,7 +1,7 @@
-console.log('Script loaded');
+console.log('POPUP loaded');
 
 document.addEventListener('DOMContentLoaded', async () => {
-    console.log('DOM loaded');
+    console.log('POPUP DOM loaded');
     const settingTypeSwitch = document.getElementById('settingTypeSwitch');
     const viewPriceInput = document.getElementById('viewPriceInput');
     const dailyLimitInput = document.getElementById('dailyLimitInput');
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 console.log('tab ', tab);
                 console.log('tab id ', tab[0].id); */
         await chrome.runtime.sendMessage({ action: 'startPromo' })
-        console.log('Message sent');
+        console.log('POPUP Message sent');
     })
 })
 
