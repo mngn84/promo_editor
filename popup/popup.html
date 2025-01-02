@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="settings-block">
+        <div class="switch-row">
+            <label class="switch" for="settingTypeSwitch">Вручную </label>
+            <input class="switch" type="checkbox" id="settingTypeSwitch">
+        </div>
+        <div class="input-row">
+            <label for="viewPriceInput">Цена просмотра </label>
+            <input type="number" id="viewPriceInput">
+        </div>
+        <div class="input-row">
+            <label for="dailyLimitInput">Лимит трат на день</label>
+            <input type="number" id="dailyLimitInput">
+        </div>
+    </div>
+
+    <div class="settings-block">
+        <div class="switch-row">
+            <label for="isColorSwitch">Выделить цветом </label>
+            <input type="checkbox" id="isColorSwitch" />
+        </div>
+        <div class="switch-row">
+            <label for="isXLSwitch">XL</label>
+            <input type="checkbox" id="isXLSwitch" />
+        </div>
+    </div>
+
+    <button id="promoStartButton">Продвинуть</button>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+html{}
+
+body{}
+
+.settings-block {
+    margin: 10px 0;
+}
+
+.switch-row, .input-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.switch-row{
+}
+
+.input-row{
+}
+
+.input-row label {
+    margin-right: 10px;
+}
+
+.input-row input {
+    width: 120px;
+}
+.switch-row input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.switch-row input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+.switch-row input[type="checkbox"]:checked {
+    background: #000;
+}
+
+.switch-row input[type="checkbox"]:checked::before {
+    left: 22px;
+}
+
+/* input[type="checkbox"] {
+    width: auto;
+    margin-left: auto;
+} */
+
+#settingTypeSwitch{}
+
+#viewPriceInput{}
+
+#dailyLimitInput{}
+
+#isColorSwitch{}
+
+#isXLSwitch{}
+
+#promoStartButton{}
